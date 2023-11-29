@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <title>Dual Tasking Test</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <div id="description">
     Description here
   </div>
-  <div id="choices">
+  <div id="testField"></div>
+  <div id="choices" style="visibility: visible;">
     <button onclick = "InitalizeTest(1000)">1000 ms</button>
     <button onclick = "InitalizeTest(800)">800 ms</button>
     <button onclick = "InitalizeTest(600)">600 ms</button>

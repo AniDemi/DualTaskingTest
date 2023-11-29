@@ -25,9 +25,20 @@ button {
   font-size: 20px;
 }
 
-#choices {
-  margin-top: 200px;
+#testField {
+  margin: 0 auto;
+  margin: 20%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  height: 300px;
+  border: 1px solid red;
 }
+
+#choices {
+  margin-top: 20px;
+}
+
 
 
 
