@@ -56,11 +56,16 @@ function createTestScreen() {
 
 function create_square() {
   shapeField.innerHTML = "";
-  //choices.appendChild();
+  const square = document.createElement("div");
+  square.setAttribute("id", "square")
+  shapeField.appendChild(square);
 }
 
 function create_circle() {
   shapeField.innerHTML = "";
+  const circle = document.createElement("div");
+  circle.setAttribute("id", "circle")
+  shapeField.appendChild(circle);
 }
 
 function create_triangle() {
