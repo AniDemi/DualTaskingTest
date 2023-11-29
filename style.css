@@ -44,7 +44,6 @@ button {
   height: 200px;
   background: black;
   border: 3px solid green;
-  border-radius: 50%;
 }
 
 #circle {
@@ -52,6 +51,7 @@ button {
   height: 200px;
   background: black;
   border: 3px solid green;
+  border-radius: 50%;
 }
 
 
