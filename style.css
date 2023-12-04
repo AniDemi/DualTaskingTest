@@ -27,12 +27,14 @@ button {
 
 #testField {
   margin: 0 auto;
-  margin: 20%;
+  margin: 10%;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 10px;
   height: 300px;
-  border: 1px solid red;
+  border: 5px solid rgb(43, 43, 43);
+  border-radius: 10%;
+  background-color: rgb(71, 71, 71);
 }
 
 #choices {
@@ -40,18 +42,35 @@ button {
 }
 
 #square {
-  width: 200px;
-  height: 200px;
-  background: black;
-  border: 3px solid green;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(71, 71, 71);
+  border: 3px solid rgb(255, 255, 255);
 }
 
 #circle {
-  width: 200px;
-  height: 200px;
-  background: black;
-  border: 3px solid green;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(71, 71, 71);
+  border: 3px solid rgb(255, 255, 255);
   border-radius: 50%;
+}
+
+#triangle {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid rgb(255, 255, 255);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
 }
 
 

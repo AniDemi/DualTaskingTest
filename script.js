@@ -3,6 +3,8 @@ const shapeField = document.getElementById("testField");
 
 var shapes = 1;
 
+
+
 function InitalizeTest(interval) {
   createTestScreen();
   if (shapes == null) {
@@ -15,32 +17,45 @@ function InitalizeTest(interval) {
   // Test time taken
   // timetest = Date.now();
   let testInterval = setInterval(function(){
+    let shape = "";
     var result = Math.floor(Math.random() * 3)
     console.log(result)
     if (result == 0) {
-      create_square();
+      shape = "square";
       squares++;
     }
-  
+
     if (result == 1) {
-      create_circle();
+      shape = "circle";
       circles++;
     }
-  
+
     if (result == 2) {
-      create_triangle();
+      shape = "triangle";
       triangles++;
     }
+    create_shape(shape);
     console.log("\nSquares: " + squares + "\nCircles: " + circles + "\nTriangles: " + triangles);
     runsLeft--;
     if (runsLeft == 0) {
       clearInterval(testInterval);
+      shapeField.innerHTML = "";
       createMenuScreen();
       // Call to function to clear test, show result and input field
     }
     // Test time taken
     // console.log(Date.now() - timetest);
   }, interval);
+}
+
+function create_shape(shape) {
+  let top = Math.random()*60+20;
+  let left = Math.random()*60+20;
+  shapeField.innerHTML = "";
+  const form = document.createElement("div");
+  form.setAttribute("id", shape);
+  form.setAttribute("style", "top:" + top + "%;left:" + left + "%;");
+  shapeField.appendChild(form);
 }
 
 function createMenuScreen() {
@@ -51,23 +66,3 @@ function createTestScreen() {
   choices.style.visibility = "hidden";
 }
 
-
-
-
-function create_square() {
-  shapeField.innerHTML = "";
-  const square = document.createElement("div");
-  square.setAttribute("id", "square")
-  shapeField.appendChild(square);
-}
-
-function create_circle() {
-  shapeField.innerHTML = "";
-  const circle = document.createElement("div");
-  circle.setAttribute("id", "circle")
-  shapeField.appendChild(circle);
-}
-
-function create_triangle() {
-  shapeField.innerHTML = "";
-}
