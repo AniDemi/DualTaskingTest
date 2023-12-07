@@ -4,9 +4,10 @@ const testDesc = document.getElementById("testDesc");
 const startButton = document.getElementById("startButton");
 const inputField = document.getElementById("inputField");
 const submitResult = document.getElementById("submitResult");
+const description = document.getElementById("description");
 
 var trackShapes = 2;
-var intervals = [2000, 1000, 500, 250];
+var intervals = [20, 10, 5, 25];
 var currentTest = 0;
 var squares;
 var circles;
@@ -159,19 +160,23 @@ function createFinishScreen() {
   submitResult.style.display = "none";
   shapeField.style.display = "none";
   inputField.innerHTML = "";
-  testDesc.innerHTML = "You have finished all the tests " + "<br/>" + "please copy and paste the strings within the quotation marks found below into the google form"
+  description.innerHTML = "";
+  description.innerHTML = " You have finished all the tests, down below you can find two strings that have already been formatted. " + 
+  "In the first string every pair of numbers is the percantage of circles and squares found, respectively, for each time interval. " + 
+  "In the second string every number is the percantage of circles found for each time interval. " + 
+  "The intervals were 2000ms, 1000ms, 500ms, and 250ms.";
+  testDesc.innerHTML = "To finish this study please copy and paste the strings within the quotation marks into the google form";
   createField(twoShapeResult, 2);
   createField(oneShapeResult, 1);
-  //Create field below to copy from
 }
 
 function createField(content, type) {
   text = document.createElement("p");
   if (type == 2) {
-    text.textContent += "Results for counting two shapes: "
+    text.textContent += "Results for counting two shapes: ";
   }
   if (type == 1) {
-    text.textContent += "Results for counting one shape: "
+    text.textContent += "Results for counting one shape: ";
   }
   text.textContent += "\""+content+"\"";
   inputField.appendChild(text);
