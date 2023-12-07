@@ -2,6 +2,7 @@ html {
   padding: 0;
   margin: 0;
   border: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -14,15 +15,15 @@ body {
 
 button {
   margin: 3px;
+  margin-top: 20px;
   padding: 5px;
   border: 1px solid grey;
 }
 
 #description {
-  margin-top: 100px;
+  margin-top: 20px;
   padding: 10px; 
-  border: 1px solid red;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 #testField {
@@ -37,8 +38,16 @@ button {
   background-color: rgb(71, 71, 71);
 }
 
-#choices {
-  margin-top: 20px;
+#testDesc {
+  margin-top: 10px;
+}
+
+#inputStyle {
+  margin-top: 10px;
+}
+
+#inputStyle>p {
+  display:inline;
 }
 
 #square {
@@ -47,7 +56,7 @@ button {
   left: 50%;
   width: 20px;
   height: 20px;
-  background-color: rgb(71, 71, 71);
+  background-color: rgb(255, 255, 255);
   border: 3px solid rgb(255, 255, 255);
 }
 
@@ -57,7 +66,7 @@ button {
   left: 50%;
   width: 20px;
   height: 20px;
-  background-color: rgb(71, 71, 71);
+  background-color: rgb(255, 255, 255);
   border: 3px solid rgb(255, 255, 255);
   border-radius: 50%;
 }
