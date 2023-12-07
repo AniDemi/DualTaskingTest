@@ -7,7 +7,7 @@ const submitResult = document.getElementById("submitResult");
 const description = document.getElementById("description");
 
 var trackShapes = 2;
-var intervals = [20, 10, 5, 25];
+var intervals = [2000, 1000, 500, 250];
 var currentTest = 0;
 var squares;
 var circles;
