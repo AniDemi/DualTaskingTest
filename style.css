@@ -7,7 +7,7 @@ html {
 
 body {
   margin: auto;
-  width: 40%;
+  width: 45%;
   text-align: center;
   background-color: rgb(21, 21, 21);
   color: white
@@ -21,16 +21,16 @@ button {
 }
 
 #description {
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 10px; 
   font-size: 16px;
 }
 
 #testField {
   margin: 0 auto;
-  margin: 10%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 15%;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 10px;
   height: 300px;
   border: 5px solid rgb(43, 43, 43);
